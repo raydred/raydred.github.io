@@ -1,31 +1,247 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 
-.outer-container {
-    display: flex;
-    justify-content: center;
+}
+
+body {
+  width:100%;
+  /* font-size: 14px; */
+}
+
+.debug {
+  border: 0.4vh solid red !important;
+}
+
+hr.red {
+  border:0.30vw solid #BF1B2C;
+  width: 70%;
+  border-radius: 100px;
 }
 
 .container {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    max-width: 500px;
-    flex-direction: column;
+
+  flex-wrap: nowrap;
+  /* width: 70%; */
+  display: flex;
+  flex-direction: column;
+  margin:0 auto;
+  align-items: center;
 }
 
-.item {
-    background-color: #d5d5d5;
-    border-radius: 5px;
-    padding: 6px
+.header {
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ margin:0 auto;
+ padding:0px;
+ gap: 0px;
+ margin-bottom: 2vw;
 }
 
-.avi {
-    width:250px;
-    height:250px;
-    background-image: url('https://raydredstudios.com/raydredStudiosLogo.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+
+.avatar {
+  width: 25vw;
+  height: 20vw;
+  margin:1v;
+  background: url("../images/Raydred-Studios-logo.png");
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 99;
+  
 }
 
-.debug{
-    border: 2px solid red;
+.nameplate{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  justify-content: center;
+}
+
+.nameplate hr {
+  width:80%;
+  border:0.15vh solid rgb(127, 127, 127,0.6);
+}
+
+.title, .subtitle{
+  padding:10px;
+  margin: 0px;
+}
+
+.title {
+  color: #000;
+  font-family: Earthwerk;
+  font-size: 6vw;
+  opacity: 1;
+  text-align: center;
+}
+
+.subtitle {
+  color: #000;
+  font-family: Maiden Orange;
+  font-weight: Regular;
+  font-size: 3.5vw;
+  opacity: 1;
+  text-align: center;
+  letter-spacing: 0.2vw;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.links {
+  width: 75%;  
+}
+
+.links li:first-child {
+  margin-top: 4vw; 
+}
+
+.links li:last-child {
+  margin-bottom: 4vw; 
+}
+
+.links li {
+  margin-bottom: 1vw;
+}
+
+.links li a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #fbd585; 
+  border: 0.26vw solid #F9AD0C;
+  border-radius: 1vw;
+  color: #000;
+  font-family: Readex Pro;
+  font-weight: Medium;
+  font-size: 4vw;
+  text-decoration: none;
+  padding: 1.5vh;
+}
+
+.links li a:hover {
+  background-color:#ffca59; 
+}
+
+.links li a .icon {
+  margin-left:2.5vw;
+   
+}
+
+.links li a .text {
+  margin-left:4vw;
+}
+
+.live-badge {
+  width: 311px;
+  height: 99px;
+  background: rgba(173, 0, 0, 1);
+  opacity: 1;
+  border-radius: 59px;
+}
+
+.lets-connect-button {
+
+  width:30vw;
+  text-decoration: none;
+  text-align: center;
+  background: #000;
+  border: 0.25vw solid rgba(161, 161, 161, 1);
+  border-radius: 100px;
+  color: #ededed;
+  font-family: Readex Pro;
+  font-weight: Medium;
+  font-size: 3vw;
+  opacity: 1;
+  display: block;
+  padding:1vw;
+  margin:0 auto;
+  margin-top:2vw;
+  margin-bottom:2vw;
+}
+
+
+.collaborate-block {
+  margin: 0 auto;
+  width: 65%;
+  margin-bottom:5vw;
+}
+
+.collaborate-block hr {
+  border: 0.15vw solid rgba(0,0,0,0.2);
+  margin:1vw;
+  padding:0px;
+}
+
+.collaborate-block h4 {
+  margin:2vw;
+}
+
+.collaborate-title {
+  color: #000;
+  font-family: Readex Pro;
+  font-weight: Medium;
+  font-size: 3vw;
+  opacity: 1;
+  text-align: center;
+}
+.collaborate-text {
+  color: #000;
+  font-family: Readex Pro;
+  font-weight: Regular;
+  font-size: 2.2vw;
+  opacity: 1;
+  text-align: left;
+  padding: 1vw;
+}
+
+.copyright-block {
+
+  margin:0 auto;
+  margin-bottom:6vw;
+  text-align: center;
+}
+
+.copyright-logo {
+  background: url("../images/raydred-studios-seal.png");
+  opacity: 1;
+  width:20vw;
+  height: 10vw;
+  background-size: cover;
+  margin:0 auto;
+}
+.copyright-text {
+  color: #000;
+  font-family: Readex Pro;
+  font-weight: Medium;
+  font-size: 1.4vw;
+  opacity: 1;
+  text-align: center;
+}
+.legal-links {
+  width: 273px;
+  color: rgba(0, 63, 138, 1);
+  top: 3816px;
+  left: 1107px;
+  font-family: Readex Pro;
+  font-weight: Regular;
+  font-size: 32px;
+  opacity: 1;
+  text-align: right;
+}
+
+.legal-links{
+  display: none;
+}
+
+
+@media screen and (min-width: 2500px) {
+
 }
