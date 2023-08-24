@@ -1,6 +1,6 @@
 
 @font-face {
-  font-family: 'Earthwerk';
+  font-family: 'EarthwerkWeb';
   src: url('fonts/Earthwerk.woff') format('woff');
 }
 
@@ -30,29 +30,29 @@ hr.red {
 
 .container {
 
-  flex-wrap: nowrap;
-  /* width: 70%; */
-  display: flex;
-  flex-direction: column;
-  margin:0 auto;
-  align-items: center;
+flex-wrap: nowrap;
+display: flex;
+flex-direction: column;
+margin:0 auto;
+align-items: center;
 }
 
 .header {
  display: flex;
- flex-direction: row;
+ flex-direction: column;
  align-items: center;
  margin:0 auto;
  padding:0px;
  gap: 0px;
  margin-bottom: 2vw;
+ margin-top: 5vw;
 }
 
 
 .avatar {
-  width: 25vw;
-  height: 20vw;
-  margin:1v;
+  width: 35vw;
+  height: 35vw;
+  margin:1vw;
   background: url("../images/Raydred-Studios-logo.png");
   background-position: center center;
   background-size: contain;
@@ -65,7 +65,6 @@ hr.red {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
   justify-content: center;
 }
 
@@ -81,8 +80,8 @@ hr.red {
 
 .title {
   color: #000;
-  font-family: Earthwerk;
-  font-size: 6vw;
+  font-family: EarthwerkWeb;
+  font-size: 10vw;
   opacity: 1;
   text-align: center;
 }
@@ -91,7 +90,7 @@ hr.red {
   color: #000;
   font-family: Maiden Orange;
   font-weight: Regular;
-  font-size: 3.5vw;
+  font-size: 5.65vw;
   opacity: 1;
   text-align: center;
   letter-spacing: 0.2vw;
@@ -116,7 +115,7 @@ ul {
 }
 
 .links li {
-  margin-bottom: 1vw;
+  margin-bottom: 3vw;
 }
 
 .links li a {
@@ -129,7 +128,7 @@ ul {
   color: #000;
   font-family: Readex Pro;
   font-weight: Medium;
-  font-size: 4vw;
+  font-size: 7vw;
   text-decoration: none;
   padding: 1.5vh;
 }
@@ -157,7 +156,6 @@ ul {
 
 .lets-connect-button {
 
-  width:30vw;
   text-decoration: none;
   text-align: center;
   background: #000;
@@ -166,7 +164,7 @@ ul {
   color: #ededed;
   font-family: Readex Pro;
   font-weight: Medium;
-  font-size: 3vw;
+  font-size: 5vw;
   opacity: 1;
   display: block;
   padding:1vw;
@@ -196,7 +194,7 @@ ul {
   color: #000;
   font-family: Readex Pro;
   font-weight: Medium;
-  font-size: 3vw;
+  font-size: 4vw;
   opacity: 1;
   text-align: center;
 }
@@ -204,10 +202,10 @@ ul {
   color: #000;
   font-family: Readex Pro;
   font-weight: Regular;
-  font-size: 2.2vw;
+  font-size: 4vw;
   opacity: 1;
   text-align: left;
-  padding: 1vw;
+  padding: 3vw;
 }
 
 .copyright-block {
@@ -220,8 +218,8 @@ ul {
 .copyright-logo {
   background: url("../images/raydred-studios-seal.png");
   opacity: 1;
-  width:20vw;
-  height: 10vw;
+  width:40vw;
+  height: 20vw;
   background-size: cover;
   margin:0 auto;
 }
@@ -229,7 +227,7 @@ ul {
   color: #000;
   font-family: Readex Pro;
   font-weight: Medium;
-  font-size: 1.4vw;
+  font-size: 3vw;
   opacity: 1;
   text-align: center;
 }
@@ -250,6 +248,9 @@ ul {
 }
 
 
-@media screen and (min-width: 2500px) {
+/* @media screen and (max-width: 1284px) {
+  .header {
+    flex-direction: column;
+  }
 
-}
+} */
