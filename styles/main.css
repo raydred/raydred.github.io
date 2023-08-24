@@ -1,3 +1,11 @@
+
+@font-face {
+  font-family: 'Earthwerk';
+  src: url('fonts/Earthwerk.woff') format('woff');
+}
+
+
+
 * {
   box-sizing: border-box;
   margin: 0px;
